@@ -70,23 +70,23 @@ const Index = () => {
         />
         <div className="absolute inset-0 bg-gradient-hero opacity-80" />
         
-        <div className="relative z-10 text-center space-y-8 px-4 animate-fade-in">
-          <div className="space-y-4">
-            <Heart className="w-16 h-16 mx-auto text-accent animate-pulse-glow" />
-            <h1 className="text-5xl md:text-7xl font-bold text-white">
+        <div className="relative z-10 text-center space-y-6 sm:space-y-8 px-4 animate-fade-in max-w-4xl mx-auto">
+          <div className="space-y-3 sm:space-y-4">
+            <Heart className="w-12 h-12 sm:w-16 sm:h-16 mx-auto text-accent animate-pulse-glow" />
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-tight">
               2 Anos
             </h1>
-            <p className="text-xl md:text-2xl text-white/90">
+            <p className="text-lg sm:text-xl md:text-2xl text-white/90 px-2">
               De amor, jogos e aventuras juntos
             </p>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="romantic" size="lg" className="animate-scale-in">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center pt-2">
+            <Button variant="romantic" size="lg" className="animate-scale-in w-full sm:w-auto">
               <Heart className="w-5 h-5" />
               Nossa História
             </Button>
-            <Button variant="sage" size="lg" className="animate-scale-in">
+            <Button variant="sage" size="lg" className="animate-scale-in w-full sm:w-auto">
               <Gamepad2 className="w-5 h-5" />
               Nossos Champions
             </Button>
@@ -94,26 +94,26 @@ const Index = () => {
         </div>
 
         {/* Floating elements */}
-        <div className="absolute top-20 left-10 animate-float">
-          <Heart className="w-8 h-8 text-primary opacity-30" />
+        <div className="absolute top-16 left-4 sm:top-20 sm:left-10 animate-float">
+          <Heart className="w-6 h-6 sm:w-8 sm:h-8 text-primary opacity-30" />
         </div>
-        <div className="absolute top-32 right-20 animate-float" style={{ animationDelay: '2s' }}>
-          <Gamepad2 className="w-10 h-10 text-secondary opacity-30" />
+        <div className="absolute top-24 right-4 sm:top-32 sm:right-20 animate-float" style={{ animationDelay: '2s' }}>
+          <Gamepad2 className="w-8 h-8 sm:w-10 sm:h-10 text-secondary opacity-30" />
         </div>
-        <div className="absolute bottom-32 left-20 animate-float" style={{ animationDelay: '4s' }}>
-          <Heart className="w-6 h-6 text-accent opacity-30" />
+        <div className="absolute bottom-24 left-4 sm:bottom-32 sm:left-20 animate-float" style={{ animationDelay: '4s' }}>
+          <Heart className="w-5 h-5 sm:w-6 sm:h-6 text-accent opacity-30" />
         </div>
       </section>
 
       {/* Timeline Section */}
-      <section className="py-20 px-4">
+      <section className="py-12 sm:py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in">
-            <Calendar className="w-12 h-12 mx-auto text-accent mb-4" />
-            <h2 className="text-4xl font-bold text-foreground mb-4">
+          <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+            <Calendar className="w-10 h-10 sm:w-12 sm:h-12 mx-auto text-accent mb-4" />
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
               Nossa Timeline de Amor
             </h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-muted-foreground text-base sm:text-lg px-2">
               Cada momento especial da nossa jornada juntos
             </p>
           </div>
@@ -138,19 +138,19 @@ const Index = () => {
       </section>
 
       {/* Characters Section */}
-      <section className="py-20 px-4 bg-muted/30">
+      <section className="py-12 sm:py-20 px-4 bg-muted/30">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in">
-            <Users className="w-12 h-12 mx-auto text-accent mb-4" />
-            <h2 className="text-4xl font-bold text-foreground mb-4">
+          <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+            <Users className="w-10 h-10 sm:w-12 sm:h-12 mx-auto text-accent mb-4" />
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
               Nossos Champions Favoritos
             </h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-muted-foreground text-base sm:text-lg px-2">
               Os personagens que representam nossa conexão nos jogos que amamos
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {characters.map((character, index) => (
               <div key={index} className="animate-fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
                 <CharacterCard {...character} />
@@ -161,26 +161,26 @@ const Index = () => {
       </section>
 
       {/* Final Message Section */}
-      <section className="py-20 px-4">
+      <section className="py-12 sm:py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <Card className="bg-gradient-romantic p-12 shadow-romantic animate-fade-in">
-            <div className="space-y-6 text-white">
-              <Heart className="w-16 h-16 mx-auto animate-pulse-glow" />
-              <h2 className="text-3xl md:text-4xl font-bold">
+          <Card className="bg-gradient-romantic p-6 sm:p-12 shadow-romantic animate-fade-in">
+            <div className="space-y-4 sm:space-y-6 text-white">
+              <Heart className="w-12 h-12 sm:w-16 sm:h-16 mx-auto animate-pulse-glow" />
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
                 Para Sempre Nosso GG! 💕
               </h2>
-              <p className="text-xl leading-relaxed opacity-90">
+              <p className="text-lg sm:text-xl leading-relaxed opacity-90 px-2">
                 Dois anos incríveis de risadas, conquistas, derrotas e vitórias lado a lado. 
                 Você é meu player dois favorito na vida e nos games. 
                 Aqui está para muitas mais aventuras, muitos mais anos, e para sempre sermos 
                 o duo mais imbatível de todos! Te amo infinitamente! 
               </p>
-              <div className="flex justify-center gap-4 pt-6">
-                <Button variant="sage" size="lg">
+              <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 pt-4 sm:pt-6">
+                <Button variant="sage" size="lg" className="w-full sm:w-auto">
                   <Heart className="w-5 h-5" />
                   Te Amo
                 </Button>
-                <Button variant="clove" size="lg">
+                <Button variant="clove" size="lg" className="w-full sm:w-auto">
                   <Gamepad2 className="w-5 h-5" />
                   Próxima Fase
                 </Button>
