@@ -15,46 +15,46 @@ const Index = () => {
       name: "Sage",
       game: "Valorant",
       image: sageImage,
-      description: "A sentinel with the power to heal and revive, bringing hope and protection to our team, just like the care we bring to each other."
+      description: "Uma sentinela com o poder de curar e reviver, trazendo esperança e proteção à nossa equipe, assim como o cuidado que dedicamos uns aos outros."
     },
     {
       name: "Clove",
       game: "Valorant", 
       image: cloveImage,
-      description: "An immortal controller with endless determination, representing the eternal nature of our love that grows stronger each day."
+      description: "Um controlador imortal com determinação infinita, representando a natureza eterna do nosso amor que fica mais forte a cada dia."
     },
     {
       name: "Soraka",
       game: "League of Legends",
       image: sorakaImage,
-      description: "The Starchild who sacrifices for others, embodying the selfless love and support we show each other every day."
+      description: "A Criança Estelar que se sacrifica pelos outros, personificando o amor altruísta e o apoio que demonstramos uns aos outros todos os dias."
     },
     {
       name: "Teemo",
       game: "League of Legends",
       image: teemoImage,
-      description: "Small but mighty, proving that the greatest adventures come in the most adorable packages, just like our sweetest moments together."
+      description: "Pequeno, mas poderoso, provando que as maiores aventuras vêm nas embalagens mais adoráveis, assim como nossos momentos mais doces juntos."
     }
   ];
 
   const timeline = [
     {
-      date: "Setembro 2022",
-      title: "Nosso Primeiro Encontro",
-      description: "O dia em que nossos caminhos se cruzaram e tudo começou. Como um duo perfeito formado no jogo da vida."
+      date: "1 de Outubro 2023",
+      title: "Pedido de Namoro",
+      description: "O dia em que foi feito o pedido de namoro e tudo começou. Como um duo perfeito formado no jogo da vida."
     },
     {
-      date: "Dezembro 2022", 
+      date: "Abril 2024", 
       title: "Primeiras Partidas Juntos",
       description: "Descobrimos que somos o combo perfeito, não só na vida real, mas também conquistando vitórias lado a lado nos games."
     },
     {
-      date: "Março 2023",
+      date: "Outubro 2024",
       title: "Level Up no Relacionamento",
       description: "Nossa conexão evoluiu para o próximo nível. Cada momento juntos tornou-se uma nova conquista desbloqueada."
     },
     {
-      date: "Setembro 2024",
+      date: "Outubro 2025",
       title: "2 Anos de Party!",
       description: "Hoje celebramos dois anos incríveis de parceria, amor e aventuras. GG para nós! 💕"
     }
